@@ -1,0 +1,17 @@
+﻿<div class='main-nav col-md-4'>
+    <div class='navbar navbar-inverse'>
+        <div class="control-menu">
+            <h2 class="control-header">Панель управления</h2>
+            <div class="tree-container">
+                <tree [tree]="pls" class="tree"
+                      [settings]="settings"
+                      (nodeRemoved)="onNodeRemoved($event)"
+                      (nodeRenamed)="onNodeRenamed($event)"
+                      (nodeSelected)="onNodeSelected($event)"
+                      (nodeMoved)="onNodeMoved($event)"
+                      (nodeCreated)="onNodeCreated($event)">
+                </tree>
+            </div>
+        </div>
+    </div>
+</div>

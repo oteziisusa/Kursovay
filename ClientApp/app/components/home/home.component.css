@@ -1,0 +1,23 @@
+﻿.square-cell {
+    border-radius: 5px;
+    margin: 15px;
+    background: #FFFFFF;
+    padding: 0;
+    text-align: center;
+    -webkit-box-shadow: 2px 3px 15px 1px rgba(0,0,0,0.48);
+    -moz-box-shadow: 2px 3px 15px 1px rgba(0,0,0,0.48);
+    box-shadow: 2px 3px 15px 1px rgba(0,0,0,0.48);
+}
+.square-cell p {
+    margin:10px 0;
+}
+.cell-header {
+    font-size: 16px;
+    font-weight: 800;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    background: #dbdb81;
+}
+.grid {
+    background: #FFFFF0;
+}

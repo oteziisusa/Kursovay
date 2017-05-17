@@ -1,0 +1,23 @@
+﻿<div class="col-md-12 grid">
+    <h1>Список помещений</h1>
+    <div class="container-fluid">
+        <div class="col-md-2 square-cell" *ngFor="let room of rooms" (click)="myModal.open()">
+            <div class="cell-header">{{room.name}}</div>
+            <div *ngFor="let category of room.categories">
+                <p>{{category.name}}: 4</p>
+            </div>
+        </div>
+    </div>
+</div>
+<modal #myModal>
+    <modal-header>
+        <h1>Modal header</h1>
+    </modal-header>
+    <modal-content>
+        Hello Modal!
+    </modal-content>
+    <modal-footer>
+        <button class="btn btn-primary" (click)="myModal.close()">close</button>
+    </modal-footer>
+</modal>
+
